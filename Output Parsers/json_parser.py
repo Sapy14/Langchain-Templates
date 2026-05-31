@@ -27,5 +27,5 @@ template=PromptTemplate(
 # print(final_result['name'])
 
 chain=template|model|parser
-result=chain.invoke()
+result=chain.invoke({})
 print(result)
